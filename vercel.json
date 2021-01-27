@@ -10,10 +10,6 @@
         {
             "src": "/(.*)",
             "dest": "/"
-        },
-        {
-            "src": "/utils/swagger/swagger",
-            "dest": "/utils/swagger/swagger.json"
         }
     ]
 }

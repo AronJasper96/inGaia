@@ -1,3 +1,4 @@
+import 'dotenv/config';
 var express = require('express');
 var indexRouter = require('./routes/root');
 var app = express();

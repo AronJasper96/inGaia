@@ -21,7 +21,7 @@
         "description": "Relativo (padrão)"
       },
       {
-        "url": "http://localhost:3000/{versao}",
+        "url": "https://in-gaia.vercel.app/{versao}",
         "variables": {
           "versao": {
             "default": "v1",

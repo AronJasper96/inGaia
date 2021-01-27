@@ -11,7 +11,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use('/', indexRouter);
 
-
 app.listen(3000, function () {
   console.log('Escutando na porta 3000!');
 });

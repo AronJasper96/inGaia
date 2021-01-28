@@ -22,6 +22,7 @@
   "homepage": "https://github.com/AronJasper96/inGaia#readme",
   "dependencies": {
     "axios": "^0.21.1",
+    "babel-cli": "^6.26.0",
     "body-parser": "^1.19.0",
     "colors": "^1.4.0",
     "cookie-parser": "~1.4.4",

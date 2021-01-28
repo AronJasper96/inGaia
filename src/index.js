@@ -1,19 +1,16 @@
 import 'dotenv/config';
-var express = require('express');
-var indexRouter = require('./routes/root');
-var app = express();
-const swaggerUI = require('swagger-ui-express');
+import expressServer from './rest-api/express-server';
 
-const swaggerDocument = require('./utils/swagger/swagger.json');
+const init = async () =>{
+  try {
+    const server = await expressServer();
+    const port = process.env.PORT_API || 3000
+    server.listen(port, () =>{
+      console.log(`API run on http://localhost:${port}`);
+    })
+  } catch (error) {
+    console.error(error);
+  }
+};
 
-app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument));
-
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use('/', indexRouter);
-
-app.listen(3000, function () {
-  console.log('Escutando na porta 3000!');
-});
-
-module.exports = app;
+init();

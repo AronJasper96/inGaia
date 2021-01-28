@@ -2,13 +2,13 @@
   "name": "ingaia",
   "version": "1.0.0",
   "description": "backend challenge",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist/",
-    "build": "npm run clean && babel src/ -d dist/ -s --copy-files",
+    "build": "npm run clean && babel ./ -d dist/ -s --copy-files",
     "start": "node dist/index.js",
-    "dev-start": "babel-node src/index.js",
-    "dev": "nodemon --exec babel-node src/index.js"
+    "dev-start": "babel-node index.js",
+    "dev": "nodemon --exec babel-node index.js"
   },
   "repository": {
     "type": "git",

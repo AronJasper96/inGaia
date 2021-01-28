@@ -22,7 +22,6 @@
   "homepage": "https://github.com/AronJasper96/inGaia#readme",
   "dependencies": {
     "axios": "^0.21.1",
-    "babel-cli": "^6.26.0",
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.8.4",
     "@babel/node": "^7.8.4",

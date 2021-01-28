@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import expressServer from './rest-api/express-server';
 
+
 const init = async () =>{
   try {
     const server = await expressServer();

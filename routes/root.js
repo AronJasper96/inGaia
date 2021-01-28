@@ -4,5 +4,4 @@ const router = express.Router();
 
 router.post('/v1/calc/metro/quadrado', calcMeters);
 
-
 module.exports = router;

@@ -4,8 +4,8 @@
   "description": "backend challenge",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf dist/",
-    "build": "npm run clean && babel / -d dist/ -s --copy-files",
+    "prd-clean": "rm -rf dist/",
+    "prd-build": "npm run clean && babel / -d dist/ -s --copy-files",
     "start": "node dist/index.js",
     "dev-start": "babel-node index.js",
     "dev": "nodemon --exec babel-node index.js"

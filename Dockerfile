@@ -1,3 +1,4 @@
+#To Dev
 FROM node:12
 
 WORKDIR /usr/src/app
@@ -6,13 +7,27 @@ COPY package*.json ./
 COPY *.babelrc ./
 
 RUN npm install
-
-COPY src ./src
-
-RUN npm run build
-
-RUN rm -rf ./src
-
+COPY . .
 EXPOSE 3000
+CMD ["npm","run","dev-start"]
 
-CMD ["npm","run","prod"]
+
+#To Production
+# FROM node:12
+
+# WORKDIR /usr/src/app
+
+# COPY package*.json ./
+# COPY *.babelrc ./
+
+# RUN npm install
+
+# COPY src ./src
+
+# RUN npm run build
+
+# RUN rm -rf ./src
+
+# EXPOSE 3000
+
+# CMD ["npm","run","start"]

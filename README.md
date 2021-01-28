@@ -23,6 +23,8 @@ Docker
                     
 > Realizar instalação Docker
 
+------------
+
 ####Inicialização do projeto
 
 > Executar comando npm install
@@ -30,11 +32,23 @@ Docker
 Em seguida inicialize o projeto local
 > npm run dev
 
+Para realizar testes
+> npm run test
 
 ####Rotas　
-> /v1/calc/metro/quadrado
+Health Check:
+> / 
 
+ || Method GET
+```javascript
+{
+	"healthCheck": "OK"
+}
+```
 enviar via body payload conforme exemplo abaixo(em json), substituindo valor pelo desejado:
+> /v1/calc/metro/quadrado 
+
+|| Method POST
 Envio:
 ```javascript
 {
@@ -57,3 +71,16 @@ Comandos para inicializar o Docker local (lembrando, você deve estar com o term
 - docker run -p 49160:3000 -d seunome/nome-do-projeto
 - docker image list 
 >No final basta executar localhost:49160
+
+####API Online de testes
+>A API encontra-se online para testes, nesse caso foi utilizado a plataforma da VERCEL para o Deploy de testes
+- https://vercel.com
+- API: https://in-gaia.vercel.app/v1/calc/metro/quadrado
+
+###Swagger
+>A API possui um Swagger em seu código, para acessar basta acessar pelo browser na rota:
+- /api-docs
+
+>Esse Swagger funciona tanto localmente quanto no ambiente de deploy
+**Atualmente o Layout do Swagger na plataforma da Vercel está com problemas na renderização, a aplicação não conseguiu aplicar o CSS e obter alguns dados de imagens**
+

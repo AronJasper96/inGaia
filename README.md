@@ -1,18 +1,14 @@
 # InGaia
 
-**Table of Contents**
-
-[TOCM]
-
 [TOC]
 
-### Features
+# Features
 
 - API para retornar o valor do imóvel;
 - Node.JS.
 - Rest API.
 
-###Preparando WorkSpace
+#Preparando WorkSpace
 Node
 > Instalar node versão v14.15.4
 
@@ -25,7 +21,7 @@ Docker
 
 ------------
 
-####Inicialização do projeto
+#Inicialização do projeto
 
 > Executar comando npm install
 
@@ -35,7 +31,7 @@ Em seguida inicialize o projeto local
 Para realizar testes
 > npm run test
 
-####Rotas　
+#Rotas　
 Health Check:
 > / 
 
@@ -62,7 +58,7 @@ Retorno esperado
 }
 ```
 
-####Subindo Docker local
+#Subindo Docker local
 > O projeto possui um Dockerfile em sua raiz, o mesmo contém dois códigos para deploy, o primeiro que já se encontra descomentado é para utilização em ambiente local
 O segundo está configurado para realizar em produção após executar o build(deverá ficar comentado até obter um ambiente especifico).
 
@@ -72,12 +68,12 @@ Comandos para inicializar o Docker local (lembrando, você deve estar com o term
 - docker image list 
 >No final basta executar localhost:49160
 
-####API Online de testes
+#API Online de testes
 >A API encontra-se online para testes, nesse caso foi utilizado a plataforma da VERCEL para o Deploy de testes
 - https://vercel.com
 - API: https://in-gaia.vercel.app/v1/calc/metro/quadrado
 
-###Swagger
+#Swagger
 >A API possui um Swagger em seu código, para acessar basta acessar pelo browser na rota:
 - /api-docs
 

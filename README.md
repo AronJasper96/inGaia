@@ -80,3 +80,7 @@ Comandos para inicializar o Docker local (lembrando, você deve estar com o term
 >Esse Swagger funciona tanto localmente quanto no ambiente de deploy
 **Atualmente o Layout do Swagger na plataforma da Vercel está com problemas na renderização, a aplicação não conseguiu aplicar o CSS e obter alguns dados de imagens**
 
+# .ENV
+>A API possui o .env local para configurar a comunicação com a outra API, ou seja, caso realize testes usando o Dockerfile você deverá trocar o endereço para o do Docker da outra aplicação:
+- API_VALUE=
+

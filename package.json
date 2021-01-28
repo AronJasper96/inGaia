@@ -9,7 +9,7 @@
     },
   "scripts": {
     "clean": "rm -rf dist/",
-    "build": "npm run clean && babel / -d dist/ -s --copy-files",
+    "build": "npm run clean && babel / -d dist/ -s --copy-files --copy-files --ignore __tests__",
     "start": "node index.js",
     "dev-start": "babel-node index.js",
     "dev": "nodemon --exec babel-node index.js",

@@ -1,6 +1,6 @@
 import express from 'express';
 import {calcMeters} from '../rest-api/controller/calc-controller';
-import {check} from '../rest-api/controller/heath-controller';
+import {check} from '../rest-api/controller/health-controller';
 const router = express.Router();
 
 router.get('/', check);
